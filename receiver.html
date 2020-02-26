@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receiver</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+<header class="head-container">
+    <div class="bundle-container">
+        <div class="logo-pic-container"><img alt="fly" src="pic\timg.jpeg" class="logo-pic"></div>
+        <div class="inline-block"><h1 class="logo">Faster Delivery</h1></div>
+    </div>
+
+
+
+</header>
+<section class="track-container" role="form" >
+    <div class="track">
+        <div class="track--form-container">
+            <form class="track--form" action="?" method="GET">
+                <input name="trackingNumber" type="text" placeholder="Track your item" class="inputbox" >
+                <button class="js-track-button button secondary" title="Click here to track item" name="submit" >Track</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="order-containner" role="form">
+    <h1> Where is your shipment going?</h1>
+    <div class="order-info-container">
+        <form class="order-info-form" action="?" method="post">
+            <div class="form-item">
+                <label for="name_sender" class="form-item-label" >Name：</label>
+                <input type="text" id="name_sender" placeholder="Please enter sender name" class="el-input__inner">
+            </div>
+            <div class="form-item">
+                <label for="phone_sender" class="form-item-label" >Phone：</label>
+                <input type="text" id="phone_sender" placeholder="Please enter sender name" class="el-input__inner">
+            </div>
+            <div class="form-item">
+                <label for="address_sender" class="form-item-label" >Address：</label>
+                <input type="text" id="address_sender" placeholder="Please enter sender name" class="el-input__inner">
+            </div>
+
+            <div class="form-item">
+                <div class="form-item-with-children-container">
+                    <div class="form-item-child-container">
+                        <label for="city_sender" class="form-item-label" >City：</label>
+                        <input type="text" id="city_sender" placeholder="" class="el-input__inner smaller_input_inner">
+                    </div>
+                    <div class="form-item-child-container">
+                        <label for="province_sender" class="form-item-label" >Province：</label>
+                        <select id="province_sender" class="selcet-box">
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                            <option value="rince Edward Island">Prince Edward Island</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Yukon">Yukon</option>
+                            <option value="Nunavut">Nunavut</option>
+                        </select>
+                    </div>
+                    <div class="form-item-child-container">
+                        <label for="Postal_Code_sender" class="form-item-label" >Postal Code：</label>
+                        <input type="text" id="Postal_Code_sender" placeholder="" class="el-input__inner smaller_input_inner">
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="back_to_index">Back</button>
+            <button class="submit-button">Continue</button>
+        </form>
+    </div>
+
+</section>
+<script>
+    back_to_index.addEventListener("click",()=>back_to_index.closest('form').action="index.html");
+    alert(window.location.href);
+
+</script>
+</body>
+</html>

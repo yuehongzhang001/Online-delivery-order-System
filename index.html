@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+<header class="head-container">
+    <div class="bundle-container">
+        <div class="logo-pic-container"><img alt="fly" src="pic\timg.jpeg" class="logo-pic"></div>
+        <div class="inline-block"><h1 class="logo">Faster Delivery</h1></div>
+    </div>
+
+
+</header>
+<section class="track-container" role="form" >
+    <div class="track">
+        <div class="track--form-container">
+            <form class="track--form" action="receiver.html" method="GET">
+                <input name="trackingNumber" type="text" placeholder="Track your item" class="inputbox" >
+                <button class="js-track-button button secondary" title="Click here to track item">Track</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="order-containner" role="form">
+    <h1> Hello Where are you shipping from?</h1>
+    <div class="order-info-container">
+        <form class="order-info-form" action="receiver.html" method="get" id="sender_info_form">
+            <div class="form-item">
+                <label for="name_sender" class="form-item-label" >Name：</label>
+                <input type="text" name="name_sender" id="name_sender" placeholder="Please enter sender name" class="el-input__inner">
+            </div>
+            <div class="form-item">
+                <label for="phone_sender" class="form-item-label" >Phone：</label>
+                <input type="text" name="phone_sender" id="phone_sender" placeholder="Please enter sender name" class="el-input__inner">
+            </div>
+            <div class="form-item">
+                <label for="address_sender" class="form-item-label" >Address：</label>
+                <input type="text" name="address_sender"  id="address_sender" placeholder="Please enter sender name" class="el-input__inner">
+            </div>
+
+            <div class="form-item">
+                <div class="form-item-with-children-container">
+                    <div class="form-item-child-container">
+                        <label for="city_sender" class="form-item-label" >City：</label>
+                        <input type="text" name="city_sender" id="city_sender" placeholder="" class="el-input__inner smaller_input_inner">
+                    </div>
+                    <div class="form-item-child-container">
+                        <label for="province_sender" class="form-item-label" >Province：</label>
+                       <select id="province_sender" class="selcet-box" name="province_sender">
+                           <option value="Manitoba">Manitoba</option>
+                           <option value="British Columbia">British Columbia</option>
+                           <option value="Alberta">Alberta</option>
+                           <option value="Saskatchewan">Saskatchewan</option>
+                           <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                           <option value="rince Edward Island">Prince Edward Island</option>
+                           <option value="New Brunswick">New Brunswick</option>
+                           <option value="Nova Scotia">Nova Scotia</option>
+                           <option value="Quebec">Quebec</option>
+                           <option value="Ontario">Ontario</option>
+                           <option value="Yukon">Yukon</option>
+                           <option value="Nunavut">Nunavut</option>
+                       </select>
+                    </div>
+                    <div class="form-item-child-container">
+                        <label for="Postal_Code_sender" class="form-item-label" >Postal Code：</label>
+                        <input type="text" name="Postal_Code_sender" id="Postal_Code_sender" placeholder="" class="el-input__inner smaller_input_inner">
+                    </div>
+                </div>
+            </div>
+            <button class="submit-button" id="continue_button">continue</button>
+        </form>
+    </div>
+
+</section>
+<script type="text/javascript">
+    //put the form values in an array
+    // function getElements(form){
+    //     let inputElements=form.getElementsByClassName('el-input__inner');
+    //     let elements=new Array();
+    //     //add the input text value in the array
+    //     for(let elem of inputElements){
+    //         elements.push(elem);
+    //     }
+    //     //add the select value in the array
+    //     let selectElements=form.getElementsByClassName('selcet-box');
+    //     for(let elem of selectElements){
+    //         elements.push(elem);
+    //     }
+    //     return elements;
+    // }
+    //
+    // function getSerializedParameters(form){
+    //     let elements=getElements(form);
+    //     let num = elements.length;
+    //     let paras='';
+    //     let i=0;
+    //     for(;i<num-1;i++ ){
+    //         paras+=('p'+i+'='+elements[i].value+'&');
+    //     }
+    //     paras+=('p'+i+'='+elements[i].value);
+    //     return paras;
+    // }
+    //
+    // continue_button.onclick=function () {
+    //     let newURL=sender_info_form.action+getSerializedParameters(sender_info_form);
+    //     alert(newURL);
+    //     ender_info_form.action=newURL;
+        //todo
+    // }
+
+</script>
+
+
+</body>
+</html>
